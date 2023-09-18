@@ -43,7 +43,7 @@
 
 # What is your status page called?
 # Shows up in the browser bar and meta tags
-title: Eggsample Status
+title: ProjetDev - Statut
 
 # Should posts, which have a publish date
 # from the future, be built? Useful for
@@ -64,7 +64,7 @@ buildFuture: true
 #
 # See:  https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 # Also: https://www.w3schools.com/tags/ref_language_codes.asp
-languageCode: en
+languageCode: fr
 
 # What translation file should cState use?
 # You can also define whether missing
@@ -78,7 +78,7 @@ languageCode: en
 # than English! When tested with Lithuanian,
 # it would add unnecesary placeholders to
 # values that were intentionally empty.
-defaultContentLanguage: en
+defaultContentLanguage: fr
 
 # What is the hostname or path to the root?
 # Where is the site hosted?
@@ -143,11 +143,12 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   categories:
-    - name: North Coast
-      description: The main servers are located here.
-      closed: true
-    - name: Empty Category
-    - name: Uncategorized
+    - name: Site Web
+      description: Statut des services du Site Web
+      closed: false
+    - name: Serveur
+      description: Statut du serveur FiveM
+    - name: Non catégorisé
       untitled: true
 
   # These are your systems. Change them to
@@ -158,20 +159,15 @@ params:
   # For help, see the wiki:
   # https://github.com/cstate/cstate/wiki/Customization
   systems:
-    - name: Gateway
-      category: North Coast
-    - name: Backup Gateway
-      category: North Coast
-    - name: Website
-      description: The web frontend for the application.
-      category: Uncategorized
-      link: https://example.com/
+    - name: Site Web
+      category: Site Web
     - name: API
-      description: The guts of the application.
-      category: Uncategorized
-    - name: Media Proxy
-      description: This is the service responsible for serving images, audio, and video. It is reliant on our CDN.
-      category: Uncategorized
+      category: Site Web
+      link: https://projet-dev.fr
+    - name: Feedback
+      category: Site Web
+      link: https://feedback.projet-dev.fr
+  
 
   # What date format to use?
   #
@@ -292,7 +288,7 @@ params:
   # on the footer and meta tags.
   #
   # Default: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
-  description: We continuously monitor the status of our services and if there are any interruptions, a note will be posted here.
+  description: Nous surveillons en permanence l'état de nos services et, en cas d'interruption, une note sera publiée ici.
 
   # Tabs on homepage
   # Uncomment to enable.
