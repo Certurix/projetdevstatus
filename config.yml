@@ -97,7 +97,7 @@ defaultContentLanguage: fr
 #
 # Broken example:
 # baseUrl: /
-baseURL: https://example.com
+baseURL: https://status.projet-dev.fr
 
 # For features like Last modified, you
 # need to use a Git repository. If you
@@ -161,6 +161,7 @@ params:
   systems:
     - name: Site Web
       category: Site Web
+      link: https://projet-dev.fr
     - name: API
       category: Site Web
       link: https://projet-dev.fr
@@ -216,7 +217,7 @@ params:
   #
   # Default: `false`
   # BOOLEAN; `true`, `false`
-  skipSeconds: false
+  skipSeconds: true
 
   # Should there be an automatic "Last updated"
   # text shown below issues?
@@ -238,7 +239,7 @@ params:
   #
   # Default: `yearly`
   # STRING; `monthly`, `yearly`, `none`
-  incidentHistoryFormat: "yearly"
+  incidentHistoryFormat: "monthly"
 
   # Should incident history be hidden?
   #
@@ -294,10 +295,10 @@ params:
   # Uncomment to enable.
   #
   # Format:
-  # customTabs:
-  #  -
-  #    name: Name
-  #    link: https://example.com
+  customTabs:
+   -
+  name: Accueil
+  link: https://projet-dev.fr
 
   # Disable complex server-side
   # calculations that may impact
